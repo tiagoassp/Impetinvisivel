@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Impetinvisivel Lda</title>
+    <link rel="stylesheet" type="text/css" href="stylesContact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <header class="top-nav">
+                <div class="phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+351 913444797</span>
+                </div>
+                <div class="social-media">
+                    <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+        </header>
+                <nav class="navbar">
+                    <div class="navbar-left-side">
+                        <a href="aboutUs.html">Sobre Nós</a>
+                        <a href="services.html">Serviços</a>
+                        <a href="contact.html">Contactos</a>
+                    </div>
+                    <div class= "navbar-right-side">
+                        <a href="orcamento.html">Orçamento</a>
+                        <a href="area-cliente.html">Área Cliente</a>
+                        <a href="operador.html">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                    </div>
+                </nav>
+        <div class="navbar-mobile">
+            <div class = "mobile-menu-icon">
+                <button onclick="showMenu()"><i id = "menuIcon" class="fa-solid fa-bars" style="color: #000000;"></i></button>
+            </div>
+            <div class = "mobile-nav">
+                <ul class="nav-links-mobile">
+                    <li><a href="index.html">Início</a></li>
+                    <li class="vertical-bar">-</li>
+                    <li><a href="aboutUs.html">Sobre Nós</a></li>
+                    <li class="vertical-bar">-</li>
+                    <li><a href="services.html">Serviços</a></li>
+                    <li class="vertical-bar">-</li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li class="vertical-bar">-</li>
+                    <li><a href="orcamento.html">Orçamento</a></li>
+                    <li class="vertical-bar">-</li>
+                    <li><a href="cliente.html">Área Cliente</a></li>
+                    <li class="vertical-bar">-</li>
+                    <li> <a href="operador.html">
+                        <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="getInTouch">
+                <p>Fale Connosco!</p>
+                <div class="socials">
+                    <div class="socials-email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>geral.impetinvisivel@gmail.com</span>
+                    </div>
+                    <div class="socials-place">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Vila Nova de Famalicão</span>
+                    </div>
+                </div>
+            </div>
+            <div class="email">
+                <form onsubmit="sendEmail(); reset(); return false;">
+                    <input type="text" id="name" placeholder="Nome" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="title" id="title" placeholder="Título" required>
+                    <textarea name="message" id="message" rows="10" placeholder="Mensagem"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "jalamente@gmail.com",
+                Password : "8F4C0370BBDEF89DED07062475DFDE4FDD12",
+                To : 'geral.impetinvisivel@gmail.com',
+                From : "jalamente@gmail.com",
+                Subject : document.getElementById("title").value,
+                Body : "Name: " + document.getElementById("title").value +
+                "<br> Email: " + document.getElementById("email").value +
+                "<br> Message: "  + document.getElementById("message").value          
+            }).then(
+                message => alert(message)
+                );
+        }
+    </script>
+    <a href="index.html"><p class = "company-name-navbar">Impetinvisivel Lda</p></a>
+</body>
+</html>

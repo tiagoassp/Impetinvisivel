@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Impetinvisivel Lda</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <header class="top-nav">
+                <div class="phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+351 913444797</span>
+                </div>
+                <div class="social-media">
+                    <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+        </header>
+                <nav class="navbar">
+                    <div class="navbar-left-side">
+                        <a href="aboutUs.html">Sobre Nós</a>
+                        <a href="services.html">Serviços</a>
+                        <a href="contacto.html">Contactos</a>
+                    </div>
+                    <div class= "navbar-right-side">
+                        <a href="orcamento.html">Orçamento</a>
+                        <a href="area-cliente.html">Área Cliente</a>
+                        <a href="operador.html">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                    </div>
+                </nav>
+        <div class="navbar-mobile">
+            <div class = "mobile-menu-icon">
+                <button onclick="showMenu()"><i id = "menuIcon" class="fa-solid fa-bars" style="color: #000000;"></i></button>
+            </div>
+            <div class = "mobile-nav">
+                <ul class="nav-links-mobile">
+                    <li><a href="index.html">Início</a></li>
+                    <li class="vertical-bar">-</li>
+                    <li><a href="aboutUs.html">Sobre Nós</a></li>
+                    <li class="vertical-bar">-</li>
+                    <li><a href="services.html">Serviços</a></li>
+                    <li class="vertical-bar">-</li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li class="vertical-bar">-</li>
+                    <li><a href="orcamento.html">Orçamento</a></li>
+                    <li class="vertical-bar">-</li>
+                    <li><a href="cliente.html">Área Cliente</a></li>
+                    <li class="vertical-bar">-</li>
+                    <li> <a href="operador.html">
+                        <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="home" id="home">
+            <div class="grid-slides">
+                <div class="slides">  
+                    <div class="slide first-image-slide">
+                        <img src="images/betuminous.jpg" alt="betuminous1">
+                    </div>
+                    <div class="slide second-image-slide">
+                        <img src="images/betuminous2.jpg" alt="betuminous2">
+                    </div>
+                    <div class="slide third-image-slide">
+                        <img src="images/betuminous3.jpg" alt="betuminous3">
+                    </div>
+                    <div class="slide fourth-image-slide">
+                        <img src="images/betuminous4.jpg" alt="betuminous2">
+                    </div>
+                    <div class="arrows">
+                        <button onclick="moveSlide(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button onclick="moveSlide(1)"><i class="fa-solid fa-chevron-right"></i> </button> 
+                    </div>        
+                    <div class="navigation">
+                        <button class="bar" onclick="showSlide(1)"></button>
+                        <button class="bar" onclick="showSlide(2)"></button>
+                        <button class="bar" onclick="showSlide(3)"></button>
+                        <button class="bar" onclick="showSlide(4)"></button>
+                    </div>
+                </div>
+                <div class="hero-text">
+                    Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation 
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit 
+                    esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, 
+                    sunt in culpa qui officia deserunt mollit anim 
+                    id est laborum.
+                </div>  
+            </div> 
+        </div>
+    </div>
+    <a href="index.html"><p class = "company-name-navbar">Impetinvisivel Lda</p></a>
+    <script src="main.js"></script>
+    <script src="slides.js"></script>
+</body>
+</html>

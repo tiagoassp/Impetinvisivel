@@ -1,0 +1,553 @@
+/* IMPETINVISIVEL LDA, HOME PAGE */
+/* --------------- General Purpose --------------- */
+
+@font-face {
+  font-family: 'Gothic'; /* Choose a unique name for your font */
+  src: url('fonts/DidactGothic-Regular.ttf') format('truetype'); /* Replace 'your-custom-font.ttf' with the actual font file name and path */
+}
+@font-face {
+  font-family: 'Fancy'; /* Choose a unique name for your font */
+  src: url('fonts/DancingScript-VariableFont_wght.ttf') format('truetype'); /* Replace 'your-custom-font.ttf' with the actual font file name and path */
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gothic", sans-serif;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+/*.background-stripe {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -10px);
+  z-index: 1;
+  height: 450px;
+  width: 100%;
+  background-color: #003366;
+}*/
+
+/* ----------------- Top navbar ---------------- */
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+  padding-top: 10px;
+  vertical-align: center;
+}
+.phone {
+  margin-left: 62px;
+}
+.phone span {
+  color: rgb(153, 153, 153);
+  cursor: default;
+}
+.social-media {
+  margin-right: 78px;
+}
+
+/* ----------------- navbar ---------------- */
+.navbar {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 15px;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 10px solid #003366;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 15px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: #D4AF37;
+}
+
+.navbar-left-side {
+  margin-left: 40px;
+}
+
+.navbar-right-side {
+  margin-right: 40px;
+}
+
+.company-name-navbar {
+  color: #003366;
+  font-weight: bolder;
+  font-size: 25px;
+  font-family: "Fancy";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -30px);
+  cursor: pointer;
+  padding: 43px 10px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  box-sizing: border-box;
+  border-radius: 0px 0px 20px 20px;
+}
+
+/* ---------------- About Us ---------------- */
+
+.aboutUs {
+  display: block;
+  width: 100%;
+  margin-top: 40px;
+  position: relative; 
+}
+
+.aboutUs-title {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.p-title {
+  color: #D4AF37;
+  position: absolute;
+  cursor: default;
+  top: 0;
+  left: 20%;
+  transform: translate(-20%);
+}
+
+.quemSomos {
+  display: block;
+  width: 800px;
+  margin: 0;
+  padding: 0;
+}
+
+.quemSomos .p-title{
+  color: black;
+  font-size: 30px;
+  font-weight: 900;
+  margin: 50px 18px;
+  padding: 0;
+}
+
+.quemSomos-resposta {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  box-sizing: border-box;
+  gap: 10px;
+  margin-top: 110px;
+  max-height: 200px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.quemSomos-resposta p {
+  box-sizing: border-box;
+  padding-left: 8px;
+  max-width: 360px;
+  max-height: 180px;
+  font-size: 14px;
+  color: rgb(172, 171, 171);
+  cursor: default;
+  justify-self: center;
+  line-height: 21px;
+}
+.images-colaboradores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding-bottom: 54px;
+}
+.colaboradores p{
+  padding-left: 5px;
+  box-sizing: border-box;
+}
+.colaboradores img {
+  width: 100px;
+  margin-top: 325px;
+}
+.colaboradores img:first-child {
+  width: 75px;
+  height: 25px;
+}
+.colaboradores img:nth-child(2){
+  width: 50px;
+}
+.colaboradores .p-title {
+  margin-top: 280px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #D4AF37;
+}
+
+/* ---------------- O Que Fazemos --------------*/
+
+.oQueFazemos {
+  display: block;
+  justify-content: flex-end;
+  cursor: default;
+}
+.background {
+  display: block;
+  position: relative;
+  margin-top: 50px;
+  margin-left: auto;
+  justify-content: flex-start;
+  max-width: 75%;
+  background-color: rgb(241, 241, 241);
+  border-radius: 10px 0px 0px 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  height: 750px;
+}
+.oQueFazemos img {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  max-width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.title-background p {
+  color: black;
+  font-size: 30px;
+  font-weight: 900;
+  padding-left: 270px;
+  padding-top: 135px;
+}
+
+.background-body p {
+  color: rgb(146, 146, 146);
+  max-width: 500px;
+  padding-left: 270px;
+  line-height: 20px;
+}
+
+.skills-done {
+  display: block; 
+  margin-left: 270px;
+}
+
+.skills-done div {
+  display: grid;
+  grid-template-columns: 50px 300px;
+  margin-top: 25px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.automacao {
+  padding-top: 10px;
+}
+
+.automacao span,
+.montagens span,
+.queimadores span,
+.calibracao span,
+.monitorizacao span,
+.gsm span,
+.software span {
+  justify-self: flex-start;
+  padding-left: 40px;
+}
+
+.saber-mais {
+  background-color: #D4AF37;
+  border: none;
+  border-radius: 10px;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  margin-top: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  vertical-align: center;
+}
+
+.saber-mais:hover {
+  transform: scale(1.2);
+}
+
+.down-stats {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 60px;
+  gap: 100px;
+}
+.down-stats div {
+  display: flex;
+  max-width: 200px;
+  align-items: center;
+  text-align: center;
+}
+.down-stats p {
+  color: rgb(146, 146, 146);
+  margin-top: -20px; /* Adjust this value to bring the <p> closer to the <span> */
+}
+.down-stats span {
+  color: #D4AF37;
+  font-weight: 400;
+}
+.vertical-bar::after {
+  content: "";
+  display: block; /* or inline-block */
+  height: 100%;
+  width: 1px;
+  background-color: #D4AF37; /* Use background-color instead of color */
+}
+
+/* -------------- Nome Trabalhador -------------- */
+
+.trabalhadores {
+  margin-top: 80px;
+  width: 100%;
+  height: 300px;
+  color: black;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.title-trabalhadores {
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.nome-trabalhador {
+  font-size: 25px;
+  color: #D4AF37;
+  text-transform: capitalize;
+}
+
+.nome-CEO {
+  align-items: center;
+}
+
+.nome-CEO span:first-child {
+  font-size: 16px;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.nome-CEO span:last-child {
+  font-size: 13px;
+  color: rgb(185, 185, 185);
+}
+
+.trabalhadores-text {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* ---------------- Map -------------- */
+
+.map-division {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: rgb(241, 241, 241);
+  margin-top: 60px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.map-division header{
+  text-transform: capitalize;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 30px;
+  font-weight: 900;
+}
+.map-division img {
+  max-width: 60%;
+  margin-top: 50px;
+}
+.america, .asia, .europe {
+  /*display: none;*/
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.america div, .europe div {
+  justify-self: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  max-width: 600px;
+}
+.america div:not(:first-child), .europe div:not(:first-child) {
+  margin-top: -50px;
+}
+.america img, .asia img, .europe img {
+  max-width: 300px;
+}
+
+/* ---------------- Dropdown Menu -------------- */
+
+.dropdown {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100px;
+  margin-top: 60px;
+  font-weight: 700;
+  padding: 10px;
+  border: 1px solid #D4AF37;
+  cursor: pointer;
+  color: white;
+  background-color: #D4AF37;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown-options{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 999;
+}
+
+.dropdown-options button {
+  display: block;
+  height: 30px;
+  width: 100px;
+  text-align: center;
+  color: white;
+  align-items: center;
+  border: 1px solid white;
+  margin-top: 10px;
+  background-color: #D4AF37;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border-radius: 10px;
+}
+.dropdown-options button:hover {
+  transform: scale(1.1);
+}
+.dropdown:hover .dropdown-options {
+  display: inline;
+}
+/* ---------------- PHONE TURN OFF -------------- */
+
+.navbar-mobile {
+  display: none;
+}
+.mobile-nav {
+  display: none;
+}
+.mobile-menu-icon {
+  display: none;
+}
+
+/* ---------------- Symbols and Icons ---------------- */
+
+.fa-solid {
+  color: black;
+}
+.fa-solid:hover {
+  color: #efb110;
+}
+.fa-phone {
+  color: rgb(153, 153, 153);
+}
+.fa-phone:hover {
+  color: rgb(153, 153, 153);
+}
+.fa-linkedin {
+  font-size: 20px;
+  color: rgb(153, 153, 153);
+}
+.fa-linkedin:hover {
+  color: #efb110;
+}
+.fa-chevron-left, .fa-chevron-right {
+  color: #003366;
+  padding: 10px;
+  background-color: white;
+  border-radius: 30px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.fa-chevron-left:active, .fa-chevron-right:active {
+  transform: scale(0.95);
+}
+
+.fa-bolt,
+.fa-tools,
+.fa-fire,
+.fa-sliders-h,
+.fa-chart-line,
+.fa-mobile-alt,
+.fa-microchip {
+  font-size: 20px;
+}
+.saber-mais-icon {
+  background-color: #D4AF37;
+  box-shadow: none;
+  color: white;
+  padding: 10px 0px;
+}
+.saber-mais-icon:hover {
+  background-color: #D4AF37;
+  box-shadow: none;
+  color: white;
+  padding: 10px 0px;
+}
+.fa-chevron-down {
+  color: white;
+}
+.fa-bolt {
+  Color: #3498db;
+}
+.fa-tools {
+  color: #f39c12;
+}
+.fa-fire {
+  color: #e74c3c;
+}
+.fa-sliders-h {
+  color: #27ae60;
+}
+.fa-chart-line {
+  color: #9b59b6;
+}
+.fa-mobile-alt {
+  color: #bdc3c7;
+}
+.fa-microchip {
+  color: #2980b9;
+}
+.fa-chevron-down:hover {
+  color: white;
+}
+.fa-user {
+  cursor: pointer;
+}
+/* ---------------- PHONE -------------- */

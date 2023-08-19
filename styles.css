@@ -1,0 +1,283 @@
+/* IMPETINVISIVEL LDA, HOME PAGE */
+/* --------------- General Purpose --------------- */
+
+@font-face {
+    font-family: 'Gothic'; /* Choose a unique name for your font */
+    src: url('fonts/DidactGothic-Regular.ttf') format('truetype'); /* Replace 'your-custom-font.ttf' with the actual font file name and path */
+}
+@font-face {
+    font-family: 'Fancy'; /* Choose a unique name for your font */
+    src: url('fonts/DancingScript-VariableFont_wght.ttf') format('truetype'); /* Replace 'your-custom-font.ttf' with the actual font file name and path */
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Gothic", sans-serif;
+    height: 100vh;
+    border-bottom: 10px solid #003366;
+    box-sizing: border-box;
+}
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+/*.background-stripe {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -10px);
+    z-index: 1;
+    height: 450px;
+    width: 100%;
+    background-color: #003366;
+}*/
+
+/* ----------------- Top navbar ---------------- */
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+    padding-top: 10px;
+    vertical-align: center;
+}
+.phone {
+    margin-left: 62px;
+}
+.phone span {
+    color: rgb(153, 153, 153);
+    cursor: default;
+}
+.social-media {
+    margin-right: 78px;
+}
+
+/* ----------------- navbar ---------------- */
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 15px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 10px solid #003366;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: #D4AF37;
+}
+
+.navbar-left-side {
+    margin-left: 40px;
+}
+
+.navbar-right-side {
+    margin-right: 40px;
+}
+
+.company-name-navbar {
+    color: #003366;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: "Fancy";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -30px);
+    cursor: pointer;
+    padding: 43px 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    box-sizing: border-box;
+    border-radius: 0px 0px 20px 20px;
+}
+
+/* ----------------- Main Body ----------------- */
+.home {
+    background-color: #003366;
+    box-sizing: border-box;
+    border-top: 3px solid #D4AF37;
+    position: relative;
+    display: flex;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 70px;
+    height: 400px;
+}
+
+.grid-slides {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    align-items: center;
+}
+.slides {
+    width: 512px; /* Set the width of the slide container */
+    height: 384px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block; /* Change to inline-block */
+    transition: transform 0.6s; /* Apply a transition for smooth animation */
+}
+
+.slides img {
+    width: 512px;
+    height: 384px;
+    border-radius: 40px;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+.slide {
+    position: absolute; /* Use absolute positioning for stacking */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Start with all images hidden */
+    transition: opacity 0.6s; /* Apply a transition for fading effect */
+}
+
+.dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+.dots :not(:last-child) {
+    margin-right: 10px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center; /* Center the navigation horizontally */
+    position: absolute;
+    left: 0;
+    gap: 10px;
+    bottom: 20px; /* Place the navigation at the bottom of the .slides container */
+    width: 100%; /* Make the navigation span the full width of the .slides container */
+    box-sizing: border-box;
+    z-index: 5; /* Ensure the navigation is on top of the images */
+}
+
+.bar {
+    width: 3em;
+    height: 17px;
+    border: 3px solid white;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.bar:hover {
+    border: 2px solid #D4AF37;
+}
+
+.bar.active {
+    border: 2px solid #D4AF37;
+}
+
+.arrows {
+    display: flex;
+    position: absolute;
+    width: 512px;
+    justify-content: space-between;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.arrows button {
+    background-color: white;
+    border: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); 
+}
+
+.hero-text {
+    color: white;
+    width: 300px;
+    position: relative; /* Add this line */
+    padding-left: 20px;
+}
+
+.hero-text::before {
+    content: "";
+    position: absolute; /* Position the line absolutely within the hero-text */
+    left: 0; /* Position it to the left of the hero-text */
+    top: 0; /* Align it at the top of the hero-text */
+    width: 1px; /* Set the width of the line */
+    height: 100%; /* Make the line extend the full height of the parent element */
+    background-color: #D4AF37; /* Set the color of the line */
+}
+
+
+/* ---------------- PHONE TURN OFF -------------- */
+
+.navbar-mobile {
+    display: none;
+}
+.mobile-nav {
+    display: none;
+}
+.mobile-menu-icon {
+    display: none;
+}
+/* ---------------- Symbols and Icons ---------------- */
+.fa-solid {
+    color: black;
+}
+.fa-solid:hover {
+    color: #efb110;
+}
+.fa-phone {
+    color: rgb(153, 153, 153);
+}
+.fa-phone:hover {
+    color: rgb(153, 153, 153);
+}
+.fa-linkedin {
+    font-size: 20px;
+    color: rgb(153, 153, 153);
+}
+.fa-linkedin:hover {
+    color: #efb110;
+}
+.fa-chevron-left, .fa-chevron-right {
+    color: #003366;
+    padding: 10px;
+    background-color: white;
+    border-radius: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.fa-chevron-left:active, .fa-chevron-right:active {
+    transform: scale(0.95);
+}
+.fa-user {
+    cursor: pointer;
+  }
+/* ---------------- PHONE -------------- */

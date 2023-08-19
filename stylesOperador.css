@@ -106,6 +106,127 @@
     box-sizing: border-box;
     border-radius: 0px 0px 20px 20px;
   }
+
+/* --------------- LOGIN ------------------ */
+.login-main {
+  background-color: #cfcfcf;
+  height: 300px;
+  margin-top: 100px;
+  width: 300px;
+  border-radius: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.login-main div {
+  display: flex;
+  align-items: center;
+}
+.login-main div:nth-child(3) {
+  margin-top: 30px;
+}
+.login-main input {
+  height: 34px;
+  outline: none;
+  border: none;
+  background-color: #72889e;
+  color: white;
+}
+.login-main input::placeholder {
+  color: white;
+  text-align: center;
+}
+.login-main button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 100px;
+  color: white;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 30px;
+  background-color: #003366;
+  outline: none;
+  border: 0;
+  transition: transform 0.2s ease;
+}
+.login-main button:active {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%) scale(0.95);
+}
+
+/* --------------- CopyRight --------------- */
+
+.footer {
+  margin-top: 120px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #003366;
+  height: 180px;
+  color: white;
+}
+
+.footer p {
+  cursor: default;
+  font-weight: 700;
+  font-size: 14px;
+  margin-left: 10%;
+  padding-top: 30px;
+}
+
+.site-links {
+  display: flex;
+  gap: 10px;
+  color: white;
+}
+.site-links div {
+  display: flex;
+  text-decoration: none;
+  margin-left: 10%;
+  flex-direction: column;
+}
+
+.site-links div a {
+  color: rgb(221, 221, 221);
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.site-links div a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer-copyright{
+  color: white;
+  margin-left: 10%;
+  font-size: 12px;
+  margin-top: 20px;
+  cursor: default;
+}
+
+.vertical-line-footer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  display: inline-block; /* or inline-block */
+  height: 70%;
+  width: 2px;
+  opacity: 0.7;
+  background-color: #ffffff; /* Use background-color instead of color */
+}
 /* ---------------- PHONE TURN OFF -------------- */
 
 .navbar-mobile {
@@ -141,5 +262,32 @@
   }
   .fa-user {
     cursor: pointer;
+  }
+  .fa-lock, .login-user {
+    color: white;
+    padding: 10px;
+    background-color: #003366;
+    cursor: default;
+  }
+  .fa-lock:hover, .login-user:hover {
+    color: white;
+  }
+  .login-header {
+    color: white;
+    padding: 30px;
+    font-size: 35px;
+    background-color: #003366;
+    border-radius: 60px;
+    cursor: default;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .login-header:hover {
+    color: white;
+  }
+  .footer-user {
+    color: rgb(221, 221, 221);
   }
   /* ---------------- PHONE -------------- */  

@@ -454,6 +454,71 @@ body {
 .dropdown:hover .dropdown-options {
   display: inline;
 }
+/* --------------- CopyRight --------------- */
+
+.footer {
+  margin-top: 60px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #003366;
+  height: 200px;
+  color: white;
+}
+
+.footer p {
+  cursor: default;
+  font-weight: 700;
+  font-size: 14px;
+  margin-left: 10%;
+  padding-top: 30px;
+}
+
+.site-links {
+  display: flex;
+  gap: 10px;
+  color: white;
+}
+.site-links div {
+  display: flex;
+  text-decoration: none;
+  margin-left: 10%;
+  flex-direction: column;
+}
+
+.site-links div a {
+  color: rgb(221, 221, 221);
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.site-links div a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer-copyright{
+  color: white;
+  margin-left: 10%;
+  font-size: 12px;
+  margin-top: 20px;
+  cursor: default;
+}
+
+.vertical-line-footer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  display: inline-block; /* or inline-block */
+  height: 70%;
+  width: 2px;
+  opacity: 0.7;
+  background-color: #ffffff; /* Use background-color instead of color */
+}
+
 /* ---------------- PHONE TURN OFF -------------- */
 
 .navbar-mobile {
@@ -549,5 +614,8 @@ body {
 }
 .fa-user {
   cursor: pointer;
+}
+.footer-user {
+  color: rgb(221, 221, 221);
 }
 /* ---------------- PHONE -------------- */

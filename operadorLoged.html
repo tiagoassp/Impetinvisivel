@@ -26,10 +26,7 @@
                         <div class= "navbar-right-side">
                             <a href="orcamento.html">Orçamento</a>
                             <a href="cliente.html">Área Cliente</a>
-                            <a href="operador.html" id="normal">
-                                <i class="fa-solid fa-user"></i>
-                            </a>
-                            <a href="operadorLoged.html" id="logged">
+                            <a href="operadorLoged.html">
                                 <i class="fa-solid fa-user"></i>
                             </a>
                         </div>
@@ -59,25 +56,6 @@
                     </ul>
                 </div>
             </div>
-            <form onsubmit= "operadorLogin(); reset(); return false;">
-                <div class="login">
-                    <div class="login-main">
-                        <i class="fa-solid fa-user login-header"></i>
-                        <div class="username">
-                            <i class="fa-solid fa-user login-user"></i>
-                            <input type="text" id="name-login" placeholder="Username" required>
-                        </div>
-                        <div class="password">
-                            <i class="fa-solid fa-lock"></i>
-                            <input type="password" id="password-login" placeholder="Password" required>
-                        </div>
-                        <button type="submit">
-                            Entrar
-                        </button>
-                        <div id="error-message">Incorrect username or password</div>
-                    </div>
-                </div>
-            </form>
             <div class="footer">
                 <div class="footer-first-half">
                     <p>Site Links</p>
@@ -90,7 +68,7 @@
                         <div class="site-links-second">
                             <a href="orcamento.html">Orçamento</a>
                             <a href="cliente.html">Área Cliente</a>
-                            <a href="operador.html">
+                            <a href="operadorLoged.html">
                                 <i class="fa-solid fa-user footer-user"></i>
                             </a>
                         </div>
@@ -104,7 +82,6 @@
         </div>
         <a href="index.html"><p class = "company-name-navbar">Impetinvisivel Lda</p></a>
         <script src="main.js"></script>   
-        <script src="login.js"></script>
-        <script src="cookiesLogged.js"></script>   
+        <script src="login.js"></script>   
     </body>
 </html>

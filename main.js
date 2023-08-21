@@ -101,7 +101,6 @@ function Display_Settings () {
     const dropdownSpan = document.querySelector(".dropdown span");
     const options = document.querySelector(".dropdown-options");
     const map = document.querySelector(".map-division");
-    console.log(dropdownSpan.textContent.trim());
     if (dropdownSpan.textContent.trim() === "Continentes") {
         console.log("Im here");
         const europe =  document.querySelector(".europe");

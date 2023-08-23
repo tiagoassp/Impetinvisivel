@@ -107,16 +107,93 @@
     border-radius: 0px 0px 20px 20px;
   }
   
-/* ---------------- About Us ---------------- */
+/* ---------------- Services ---------------- */
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+
+  max-width: 100%;
+  margin: auto;
+  background-color: white;
+  height: 400px;
+  color: black;
+  border-radius: 10px;
+  margin-top: 60px;
+  cursor: default;
+}
+.first-line, .second-line  {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+}
+.first-line div, .second-line div {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  /*background-color: rgb(233, 233, 233);*/
+  padding: 30px;
+}
+.first-line div {
+  width: 80px;
+  gap: 10px;
+}
+.second-line div {
+  width: 80px;
+  gap: 10px;
+}
+button {
+  background-color: rgb(233, 233, 233);
+  outline: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+button:hover {
+  background-color: rgb(204, 204, 204);
+}
+.services-explanation {
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 625px;
+  background-color: rgb(233, 233, 233);
+  height: 150px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  opacity: 0; /* Start with opacity 0 */
+  transition: opacity 0.3s ease; /* Add transition for opacity */
+}
+.services-explanation.show {
+  opacity: 1; /* Show the explanation container */
+}
+.services-explanation div {
+  display: none;
+}
+.explanation {
+  width: 90%;
+}
+
+
 /* --------------- CopyRight --------------- */
 
 .footer {
   margin-top: 60px;
   position: relative;
-  display: none;
+  display: flex;
   flex-direction: column;
   background-color: #003366;
-  height: 200px;
+  height: 180px;
   color: white;
 }
 
@@ -172,6 +249,7 @@
   opacity: 0.7;
   background-color: #ffffff; /* Use background-color instead of color */
 }
+
 /* ---------------- PHONE TURN OFF -------------- */
 
 .navbar-mobile {
@@ -209,4 +287,25 @@
   }
   .footer-user {
     color: rgb(221, 221, 221);
+  }
+  .fa-bolt {
+    Color: #3498db;
+  }
+  .fa-tools {
+    color: #f39c12;
+  }
+  .fa-fire {
+    color: #e74c3c;
+  }
+  .fa-sliders-h {
+    color: #27ae60;
+  }
+  .fa-chart-line {
+    color: #9b59b6;
+  }
+  .fa-mobile-alt {
+    color: #bdc3c7;
+  }
+  .fa-microchip {
+    color: #2980b9;
   }

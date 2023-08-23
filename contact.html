@@ -26,10 +26,10 @@
                     <div class= "navbar-right-side">
                         <a href="orcamento.html">Orçamento</a>
                         <a href="cliente.html">Área Cliente</a>
-                        <a href="operador.html" id="normal">
+                        <a href="operador.html" class="normal">
                             <i class="fa-solid fa-user"></i>
                         </a>
-                        <a href="operadorLoged.html" id="logged">
+                        <a href="operadorLoged.html" class="logged">
                             <i class="fa-solid fa-user"></i>
                         </a>
                     </div>
@@ -52,8 +52,11 @@
                     <li class="vertical-bar">-</li>
                     <li><a href="cliente.html">Área Cliente</a></li>
                     <li class="vertical-bar">-</li>
-                    <li> <a href="operador.html">
-                        <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                    <li><a href="operador.html" class="normal">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <a href="operadorLoged.html" class="logged">
+                            <i class="fa-solid fa-user"></i>
                         </a>
                     </li>
                 </ul>
@@ -78,7 +81,7 @@
                     <input type="text" id="name" placeholder="Nome" required>
                     <input type="email" id="email" placeholder="Email" required>
                     <input type="title" id="title" placeholder="Título" required>
-                    <textarea name="message" id="message" rows="10" placeholder="Mensagem"></textarea>
+                    <textarea name="message" id="message" rows="10" placeholder="Mensagem" style="resize: none;"></textarea>
                     <button type="submit">Enviar</button>
                 </form>
             </div>
@@ -95,9 +98,10 @@
                     <div class="site-links-second">
                         <a href="orcamento.html">Orçamento</a>
                         <a href="cliente.html">Área Cliente</a>
-                        <a href="operador.html">
-                            <i class="fa-solid fa-user footer-user"></i>
-                        </a>
+                        <a href="operador.html" class="normal">
+                            <i class="fa-solid fa-user" style="color: white;"></i>                        </a>
+                        <a href="operadorLoged.html" class="logged">
+                            <i class="fa-solid fa-user" style="color: white;"></i>                        </a>
                     </div>
                 </div>
             </div>

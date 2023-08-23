@@ -241,7 +241,6 @@ button:active {
   margin-top: 20px;
   cursor: default;
 }
-
 .vertical-line-footer {
   position: absolute;
   top: 50%;
@@ -284,4 +283,7 @@ button:active {
   }
   .footer-user {
     color: rgb(221, 221, 221);
+  }
+  .fa-location-dot:hover, .fa-envelope:hover {
+    color: white;
   }

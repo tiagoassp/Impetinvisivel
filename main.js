@@ -1,43 +1,22 @@
-function showMenu() {
-    let menuMobile = document.querySelector(".mobile-nav");
-    let menuIcon = document.getElementById("menuIcon");
-    let aboutUsTitle =  document.querySelector(".aboutUs-title");
-    let reach =  document.querySelector(".reach");
-    let navSeparatorMobile = document.querySelector(".name-company-div");
+const menuMobile = document.querySelector(".mobile-nav");
+const menuIcon = document.getElementById("menuIcon");
+
+document.getElementById("menuButton").addEventListener('click', () => {
     if (menuMobile.classList.contains("open")) {
         menuMobile.classList.remove("open");
         menuIcon.classList.remove("fa-xmark");
         menuIcon.classList.add("fa-bars");
-        menuIcon.style.color = "#000000"; 
-        if (aboutUsTitle) {
-            aboutUsTitle.style.marginTop = "100px"; // If aboutUsTitle exists, set margin-top to 0
-        }
-        if (reach) {
-            reach.style.marginTop = "100px"; // If aboutUsTitle exists, set margin-top to 0
-        }
-        if (navSeparatorMobile) {
-            navSeparatorMobile.style.borderBottom = "1px solid white";
-            navSeparatorMobile.style.padding = "30px";
-            navSeparatorMobile.style.width = "100%";
-        }
+        menuIcon.style.color = "#000000";
+        menuMobile.style.display = 'none';
     } else {
-        if (navSeparatorMobile) {
-            navSeparatorMobile.style.borderBottom = "0px";
-            navSeparatorMobile.style.padding = "0px";
-            navSeparatorMobile.style.width = "0%";
-        }
         menuMobile.classList.add("open");
         menuIcon.classList.remove("fa-bars");
         menuIcon.classList.add("fa-xmark");
-        menuIcon.style.color = "#000000"; // Change icon color to white
-        if (aboutUsTitle) {
-            aboutUsTitle.style.marginTop = "20px"; // If aboutUsTitle exists, set margin-top to 0
-        }
-        if (reach) {
-            reach.style.marginTop = "20px"; // If aboutUsTitle exists, set margin-top to 0
-        }
+        menuIcon.style.color = "#000000";
+        menuMobile.style.display = 'flex';
     }
-}
+});
+
 
 document.addEventListener("DOMContentLoaded", function() {
     Display_Settings();

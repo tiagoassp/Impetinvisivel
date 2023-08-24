@@ -16,8 +16,6 @@ document.getElementById("menuButton").addEventListener('click', () => {
         menuMobile.style.display = 'flex';
     }
 });
-
-
 document.addEventListener("DOMContentLoaded", function() {
     Display_Settings();
     const dropdown = document.querySelector(".dropdown");

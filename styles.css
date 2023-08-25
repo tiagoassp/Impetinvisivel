@@ -301,28 +301,30 @@ body {
         align-items: center;
     }
     .top-nav-mobile {
-        display: none;
+        display: flex;
         flex-direction: column;
         text-align: center;
         justify-content: center;
         align-items: flex-start;
-        gap: 5px;
+        gap: 15px;
     }
     .top-nav-mobile div {
-        margin-left: 30px;
-    }
-    .phone {
         display: flex;
-        gap: 5px;
         flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .phone, .social-media {
         text-align: center;
         align-items: center;
         justify-content: center;
+        width: 100%;
         margin: 0;
+        gap: 5px;
     }
     .phone span {
         font-size: 10px;
-        display: flex;
         width: 110px;
     }
     .mobile-nav {
@@ -359,18 +361,88 @@ body {
         background-color: white;
     }
     .home {
-        border-radius: 20px 20px 0px 0px;
+        border-radius: 50px 50px 50px 50px;
         max-width: 90%;
         margin: auto;
         margin-top: 70px;
-        height: 100%;
+        height: 700px;
     }
     .grid-slides {
         align-items: center;
         justify-content: center;
         display: flex;
         flex-direction: column;
+        text-align: center;
         gap: 70px;
+    }
+
+    .slides {
+        width: 384px; /* Set the width of the slide container */
+        height: 288px;
+        overflow: hidden;
+        position: relative;
+        display: inline-block; /* Change to inline-block */
+        transition: transform 0.6s; /* Apply a transition for smooth animation */
+    }   
+    .slides img {
+        width: 384px;
+        height: 288px;
+        box-sizing: border-box;
+        z-index: 3;
+    }  
+    .slide {
+        position: absolute; /* Use absolute positioning for stacking */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0; /* Start with all images hidden */
+        transition: opacity 0.6s; /* Apply a transition for fading effect */
+    }
+    .hero-text {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 80%;
+        padding: 10px;
+        width: auto;
+        justify-content: center;
+        text-align: left;
+    }
+    .hero-text::before {
+        margin-left: 5px;
+    }
+    .arrows {
+        width: 100%;
+    }
+    .arrows button{
+        background-color: none;
+    }
+}
+
+@media screen and (max-width: 388px) {
+    .company-name-navbar {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 543px) {
+    .slides {
+        width: 307px; /* Set the width of the slide container */
+        height: 230px;
+        overflow: hidden;
+        position: relative;
+        display: inline-block; /* Change to inline-block */
+        transition: transform 0.6s; /* Apply a transition for smooth animation */
+    }   
+    .slides img {
+        width: 307px;
+        height: 230px;
+        box-sizing: border-box;
+        z-index: 3;
+    }
+} 
+@media screen and (max-width: 400px) {
+    .hero-text {
+        font-size: 14px;
     }
     .slides {
         width: 256px; /* Set the width of the slide container */
@@ -385,35 +457,5 @@ body {
         height: 192px;
         box-sizing: border-box;
         z-index: 3;
-    }   
-    .slide {
-        position: absolute; /* Use absolute positioning for stacking */
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0; /* Start with all images hidden */
-        transition: opacity 0.6s; /* Apply a transition for fading effect */
-    }
-    .hero-text {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 600px;
-        padding: 10px;
-        width: auto;
-    }
-    .hero-text::before {
-        margin-left: 5px;
-    }
-}
-
-@media screen and (max-width: 388px) {
-    .company-name-navbar {
-        font-size: 20px;
-    }
-}
-@media screen and (max-width: 400px) {
-    .hero-text {
-        font-size: 14px;
     }
 }

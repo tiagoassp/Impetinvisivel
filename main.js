@@ -1,3 +1,5 @@
+
+document.addEventListener('DOMContentLoaded', () => {
 const menuMobile = document.querySelector(".mobile-nav");
 const menuIcon = document.getElementById("menuIcon");
 
@@ -15,6 +17,7 @@ document.getElementById("menuButton").addEventListener('click', () => {
         menuIcon.style.color = "#000000";
         menuMobile.style.display = 'flex';
     }
+});
 });
 document.addEventListener("DOMContentLoaded", function() {
     Display_Settings();

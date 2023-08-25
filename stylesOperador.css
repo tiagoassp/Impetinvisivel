@@ -439,12 +439,6 @@
     .vertical-line-footer {
       display: none;
     }
-    .footer {
-      background-color: #003366;
-      width: 100%;
-      position: absolute;
-      bottom: 0;
-    }
 }
 @media screen and (max-height: 700px) {
   .footer {

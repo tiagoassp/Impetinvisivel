@@ -2,293 +2,470 @@
 /* --------------- General Purpose --------------- */
 
 @font-face {
-    font-family: 'Gothic'; /* Choose a unique name for your font */
-    src: url('fonts/DidactGothic-Regular.ttf') format('truetype'); /* Replace 'your-custom-font.ttf' with the actual font file name and path */
-  }
-  @font-face {
-    font-family: 'Fancy'; /* Choose a unique name for your font */
-    src: url('fonts/DancingScript-VariableFont_wght.ttf') format('truetype'); /* Replace 'your-custom-font.ttf' with the actual font file name and path */
-  }
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: "Gothic", sans-serif;
-    height: 100vh;
-    box-sizing: border-box;
-  }
-  .container {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    background-color: white;
-  }
-  /*.background-stripe {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -10px);
-    z-index: 1;
-    height: 450px;
-    width: 100%;
-    background-color: #003366;
-  }*/
-  
-  /* ----------------- Top navbar ---------------- */
-  
-  .top-nav {
-    display: flex;
-    justify-content: space-between;
-    height: 30px;
-    background-color: white;
-    border-bottom: 1px solid lightgray;
-    padding-top: 10px;
-    vertical-align: center;
-  }
-  .phone {
-    margin-left: 62px;
-  }
-  .phone span {
-    color: rgb(153, 153, 153);
-    cursor: default;
-  }
-  .social-media {
-    margin-right: 78px;
-  }
-  
-  /* ----------------- navbar ---------------- */
-  .navbar {
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 15px;
-    background-color: white;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 10px solid #003366;
-  }
-  
-  .navbar a {
-    color: black;
-    text-decoration: none;
-    margin-right: 20px;
-    padding: 5px;
-    font-size: 16px;
-    border-radius: 15px;
-  }
-  
-  .navbar a:hover {
-    text-decoration: underline;
-    text-underline-offset: 5px;
-    color: #D4AF37;
-  }
-  
-  .navbar-left-side {
-    margin-left: 40px;
-  }
-  
-  .navbar-right-side {
-    margin-right: 40px;
-  }
-  
-  .company-name-navbar {
-    color: #003366;
-    font-weight: bolder;
-    font-size: 25px;
-    font-family: "Fancy";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -30px);
-    cursor: pointer;
-    padding: 43px 10px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    z-index: 10;
-    box-sizing: border-box;
-    border-radius: 0px 0px 20px 20px;
-  }
+  font-family: 'Gothic'; /* Choose a unique name for your font */
+  src: url('fonts/DidactGothic-Regular.ttf') format('truetype'); /* Replace 'your-custom-font.ttf' with the actual font file name and path */
+}
+@font-face {
+  font-family: 'Fancy'; /* Choose a unique name for your font */
+  src: url('fonts/DancingScript-VariableFont_wght.ttf') format('truetype'); /* Replace 'your-custom-font.ttf' with the actual font file name and path */
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gothic", sans-serif;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.container {
+  max-height: 100%;
+  width: 100%;
+  background-color: white;
+}
+/*.background-stripe {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -10px);
+  z-index: 1;
+  height: 450px;
+  width: 100%;
+  background-color: #003366;
+}*/
+
+/* ----------------- Top navbar ---------------- */
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+  padding-top: 10px;
+  vertical-align: center;
+}
+.phone {
+  margin-left: 62px;
+}
+.phone span {
+  color: rgb(153, 153, 153);
+  cursor: default;
+}
+.social-media {
+  margin-right: 78px;
+}
+
+/* ----------------- navbar ---------------- */
+.navbar {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 15px;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 10px solid #003366;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 15px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: #D4AF37;
+}
+
+.navbar-left-side {
+  margin-left: 40px;
+}
+
+.navbar-right-side {
+  margin-right: 40px;
+}
+
+.company-name-navbar {
+  color: #003366;
+  font-weight: bolder;
+  font-size: 25px;
+  font-family: "Fancy";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -30px);
+  cursor: pointer;
+  padding: 43px 10px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  box-sizing: border-box;
+  border-radius: 0px 0px 20px 20px;
+}
 
 /* --------------- LOGIN ------------------ */
 .login-main {
-  background-color: #cfcfcf;
-  height: 300px;
-  margin-top: 100px;
-  width: 300px;
-  border-radius: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+background-color: #cfcfcf;
+height: 300px;
+margin-top: 100px;
+width: 300px;
+border-radius: 40px;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+position: relative;
 }
 .login-main div {
-  display: flex;
-  align-items: center;
+display: flex;
+align-items: center;
 }
 .login-main div:nth-child(3) {
-  margin-top: 30px;
+margin-top: 30px;
 }
 .login-main input {
-  height: 34px;
-  outline: none;
-  border: none;
-  background-color: #72889e;
-  color: white;
+height: 34px;
+outline: none;
+border: none;
+background-color: #72889e;
+color: white;
 }
 .login-main input::placeholder {
-  color: white;
-  text-align: center;
+color: white;
+text-align: center;
 }
 .login-main button {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  width: 100px;
-  color: white;
-  height: 30px;
-  font-size: 16px;
-  border-radius: 30px;
-  background-color: #003366;
-  outline: none;
-  border: 0;
-  transition: transform 0.2s ease;
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translate(-50%, 50%);
+width: 100px;
+color: white;
+height: 30px;
+font-size: 16px;
+border-radius: 30px;
+background-color: #003366;
+outline: none;
+border: 0;
+transition: transform 0.2s ease;
 }
 .login-main button:active {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 50%) scale(0.95);
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translate(-50%, 50%) scale(0.95);
 }
-
+#error-message {
+display: none;
+position: absolute;
+top: 75%;
+left: 50%;
+transform: translate(-50%, -75%);
+color: rgb(255, 0, 0);
+margin-top: 10px;
+}
+.error-show {
+display: block;
+}
 /* --------------- CopyRight --------------- */
 
 .footer {
-  margin-top: 120px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  background-color: #003366;
-  height: 180px;
-  color: white;
+margin-top: 120px;
+position: relative;
+display: flex;
+flex-direction: column;
+background-color: #003366;
+height: 180px;
+color: white;
 }
 
 .footer p {
-  cursor: default;
-  font-weight: 700;
-  font-size: 14px;
-  margin-left: 10%;
-  padding-top: 30px;
+cursor: default;
+font-weight: 700;
+font-size: 14px;
+margin-left: 10%;
+padding-top: 30px;
 }
 
 .site-links {
-  display: flex;
-  gap: 10px;
-  color: white;
+display: flex;
+gap: 10px;
+color: white;
 }
 .site-links div {
-  display: flex;
-  text-decoration: none;
-  margin-left: 10%;
-  flex-direction: column;
+display: flex;
+text-decoration: none;
+margin-left: 10%;
+flex-direction: column;
 }
 
 .site-links div a {
-  color: rgb(221, 221, 221);
-  text-decoration: none;
-  font-size: 12px;
-  line-height: 20px;
+color: rgb(221, 221, 221);
+text-decoration: none;
+font-size: 12px;
+line-height: 20px;
 }
 
 .site-links div a:hover {
-  text-decoration: underline;
-  text-underline-offset: 3px;
+text-decoration: underline;
+text-underline-offset: 3px;
 }
 
 .footer-copyright{
-  color: white;
-  margin-left: 10%;
-  font-size: 12px;
-  margin-top: 20px;
-  cursor: default;
+color: white;
+margin-left: 10%;
+font-size: 12px;
+margin-top: 20px;
+cursor: default;
 }
 
 .vertical-line-footer {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  content: "";
-  display: inline-block; /* or inline-block */
-  height: 70%;
-  width: 2px;
-  opacity: 0.7;
-  background-color: #ffffff; /* Use background-color instead of color */
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+content: "";
+display: inline-block; /* or inline-block */
+height: 70%;
+width: 2px;
+opacity: 0.7;
+background-color: #ffffff; /* Use background-color instead of color */
 }
 /* ---------------- PHONE TURN OFF -------------- */
 
 .navbar-mobile {
-    display: none;
+  display: none;
+}
+.mobile-nav {
+  display: none;
+}
+.mobile-menu-icon {
+  display: none;
+}
+
+/* ---------------- Symbols and Icons ---------------- */
+
+.fa-solid {
+  color: black;
+}
+.fa-solid:hover {
+  color: #efb110;
+}
+.fa-phone {
+  color: rgb(153, 153, 153);
+}
+.fa-phone:hover {
+  color: rgb(153, 153, 153);
+}
+.fa-linkedin {
+  font-size: 20px;
+  color: rgb(153, 153, 153);
+}
+.fa-linkedin:hover {
+  color: #efb110;
+}
+.fa-user {
+  cursor: pointer;
+}
+.fa-lock, .login-user {
+  color: white;
+  padding: 10px;
+  background-color: #003366;
+  cursor: default;
+}
+.fa-lock:hover, .login-user:hover {
+  color: white;
+}
+.login-header {
+  color: white;
+  padding: 30px;
+  font-size: 35px;
+  background-color: #003366;
+  border-radius: 60px;
+  cursor: default;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.login-header:hover {
+  color: white;
+}
+.footer-user {
+  color: rgb(221, 221, 221);
+}
+/* ---------------- PHONE -------------- */  
+@media screen and (max-width: 855px) {
+  body {
+      border: none;
+  }
+  .navbar {
+      display: none;
+  }
+  .top-nav {
+      display: none;
+  }
+  .navbar-mobile {
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: 80px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      align-items: center;
+  }
+  .top-nav-mobile {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 35px;
+  }
+  .top-nav-mobile div {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+  }
+  .phone, .social-media {
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin: 0;
+      gap: 5px;
+  }
+  .phone span {
+      font-size: 10px;
+      width: 110px;
   }
   .mobile-nav {
-    display: none;
+      display: none;
+      flex-direction: column;
+      gap: 35px;
+      text-align: center;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 99;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      width: 50%;
+      height: 100vh;
+  }
+  .mobile-nav a {
+      color: black;
+      font-weight: 600;
+      text-decoration: none;
   }
   .mobile-menu-icon {
+      z-index: 100;
+      display: flex;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(-50%, -50%);
+  }
+  .mobile-menu-icon button {
+      border: 0;
+      padding: 10px;
+      background-color: white;
+  }
+  .home {
+      border-radius: 50px 50px 50px 50px;
+      max-width: 90%;
+      margin: auto;
+      margin-top: 70px;
+      height: 700px;
+  }
+  .grid-slides {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 70px;
+  }
+
+  .slides {
+      width: 384px; /* Set the width of the slide container */
+      height: 288px;
+      overflow: hidden;
+      position: relative;
+      display: inline-block; /* Change to inline-block */
+      transition: transform 0.6s; /* Apply a transition for smooth animation */
+  }   
+  .slides img {
+      width: 384px;
+      height: 288px;
+      box-sizing: border-box;
+      z-index: 3;
+  }  
+  .slide {
+      position: absolute; /* Use absolute positioning for stacking */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0; /* Start with all images hidden */
+      transition: opacity 0.6s; /* Apply a transition for fading effect */
+  }
+  .hero-text {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 80%;
+      padding: 10px;
+      width: auto;
+      justify-content: center;
+      text-align: left;
+  }
+  .hero-text::before {
+      margin-left: 5px;
+  }
+  .arrows {
+      width: 100%;
+  }
+  .arrows button{
+      background-color: none;
+  }
+  .vertical-line-footer {
     display: none;
   }
-  
-  /* ---------------- Symbols and Icons ---------------- */
-  
-  .fa-solid {
-    color: black;
-  }
-  .fa-solid:hover {
-    color: #efb110;
-  }
-  .fa-phone {
-    color: rgb(153, 153, 153);
-  }
-  .fa-phone:hover {
-    color: rgb(153, 153, 153);
-  }
-  .fa-linkedin {
-    font-size: 20px;
-    color: rgb(153, 153, 153);
-  }
-  .fa-linkedin:hover {
-    color: #efb110;
-  }
-  .fa-user {
-    cursor: pointer;
-  }
-  .fa-lock, .login-user {
-    color: white;
-    padding: 10px;
+  .footer {
     background-color: #003366;
-    cursor: default;
-  }
-  .fa-lock:hover, .login-user:hover {
-    color: white;
-  }
-  .login-header {
-    color: white;
-    padding: 30px;
-    font-size: 35px;
-    background-color: #003366;
-    border-radius: 60px;
-    cursor: default;
+    width: 100%;
     position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: 0;
   }
-  .login-header:hover {
-    color: white;
-  }
-  .footer-user {
-    color: rgb(221, 221, 221);
-  }
-  
-  /* ---------------- PHONE -------------- */  
+}
+@media screen and (max-height: 700px) {
+.footer {
+  height: 180px;
+  background-color: #003366;
+  overflow: hidden;
+}
+}
+@media screen and (max-width: 388px) {
+.company-name-navbar {
+    font-size: 20px;
+}
+}
+@media screen and (max-width: 500px) {
+.site-links {
+  gap: 0;
+}
+.site-links div a{
+  font-size: 10px;
+}
+.footer-copyright span{
+  font-size: 10px;
+}
+}

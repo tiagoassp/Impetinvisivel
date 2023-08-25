@@ -281,7 +281,6 @@ body {
     cursor: pointer;
   }
 /* ---------------- PHONE -------------- */
-
 @media screen and (max-width: 855px) {
     body {
         border: none;

@@ -8,80 +8,82 @@
     </head>
     <body>
         <div class="container">
-            <header class="top-nav">
-                    <div class="phone">
-                        <i class="fa-solid fa-phone"></i>
-                        <span>+351 913444797</span>
+            <div class="content">
+                <header class="top-nav">
+                        <div class="phone">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+351 913444797</span>
+                        </div>
+                        <div class="social-media">
+                            <a href="https://www.linkedin.com/company/impetinvisivel/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                </header>
+                        <nav class="navbar">
+                            <div class="navbar-left-side">
+                                <a href="aboutUs.html">Sobre Nós</a>
+                                <a href="services.html">Serviços</a>
+                                <a href="contact.html">Contactos</a>
+                            </div>
+                            <div class= "navbar-right-side">
+                                <a href="orcamento.html">Orçamento</a>
+                                <a href="cliente.html">Área Cliente</a>
+                                <a href="operador.html" class="normal">
+                                    <i class="fa-solid fa-user"></i>
+                                </a>
+                                <a href="operadorLoged.html" class="logged">
+                                    <i class="fa-solid fa-user"></i>
+                                </a>
+                            </div>
+                        </nav>
+                        <div class="navbar-mobile">
+                            <div class="mobile-menu-icon">
+                                <button id="menuButton"><i id="menuIcon" class="fa-solid fa-bars" style="color: #000000; font-size: 20px;"></i></button>
+                            </div>        
+                            <div class = "mobile-nav">
+                                    <a href="index.html">Início</a>
+                                    <a href="aboutUs.html">Sobre Nós</a>
+                                    <a href="services.html">Serviços</a>
+                                    <a href="contact.html">Contacto</a>
+                                    <a href="orcamento.html">Orçamento</a>
+                                    <a href="cliente.html">Área Cliente</a>
+                                    <a href="operador.html" class="normal">
+                                        <i class="fa-solid fa-user" style="color: black;"></i>
+                                    </a>
+                                    <a href="operadorLoged.html" class="logged">
+                                        <i class="fa-solid fa-user" style="color: black;"></i>
+                                    </a>
+                                    <footer class="top-nav-mobile">
+                                        <div class="phone">
+                                            <i class="fa-solid fa-phone"></i>
+                                            <span>+351 913444797</span>
+                                        </div>
+                                        <div class="social-media">
+                                            <a href="https://www.linkedin.com/company/impetinvisivel/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                        </div>
+                                    </footer>
+                            </div>
+                        </div>
+                <form onsubmit= "operadorLogin(); reset(); return false;">
+                    <div class="login">
+                        <div class="login-main">
+                            <i class="fa-solid fa-user login-header"></i>
+                            <div class="username">
+                                <i class="fa-solid fa-user login-user"></i>
+                                <input type="text" id="name-login" placeholder="Username" required>
+                            </div>
+                            <div class="password">
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="password" id="password-login" placeholder="Password" required>
+                            </div>
+                            <button type="submit">
+                                Entrar
+                            </button>
+                            <div id="error-message">Incorrect username or password</div>
+                        </div>
                     </div>
-                    <div class="social-media">
-                        <a href="https://www.linkedin.com/company/impetinvisivel/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-            </header>
-                    <nav class="navbar">
-                        <div class="navbar-left-side">
-                            <a href="aboutUs.html">Sobre Nós</a>
-                            <a href="services.html">Serviços</a>
-                            <a href="contact.html">Contactos</a>
-                        </div>
-                        <div class= "navbar-right-side">
-                            <a href="orcamento.html">Orçamento</a>
-                            <a href="cliente.html">Área Cliente</a>
-                            <a href="operador.html" class="normal">
-                                <i class="fa-solid fa-user"></i>
-                            </a>
-                            <a href="operadorLoged.html" class="logged">
-                                <i class="fa-solid fa-user"></i>
-                            </a>
-                        </div>
-                    </nav>
-            <div class="navbar-mobile">
-                <div class = "mobile-menu-icon">
-                    <button onclick="showMenu()"><i id = "menuIcon" class="fa-solid fa-bars" style="color: #000000;"></i></button>
-                </div>
-                <div class = "mobile-nav">
-                    <ul class="nav-links-mobile">
-                        <li><a href="index.html">Início</a></li>
-                        <li class="vertical-bar">-</li>
-                        <li><a href="aboutUs.html">Sobre Nós</a></li>
-                        <li class="vertical-bar">-</li>
-                        <li><a href="services.html">Serviços</a></li>
-                        <li class="vertical-bar">-</li>
-                        <li><a href="contact.html">Contacto</a></li>
-                        <li class="vertical-bar">-</li>
-                        <li><a href="orcamento.html">Orçamento</a></li>
-                        <li class="vertical-bar">-</li>
-                        <li><a href="cliente.html">Área Cliente</a></li>
-                        <li class="vertical-bar">-</li>
-                        <li><a href="operador.html" class="normal">
-                                <i class="fa-solid fa-user"></i>
-                            </a>
-                            <a href="operadorLoged.html" class="logged">
-                                <i class="fa-solid fa-user"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <form onsubmit= "operadorLogin(); reset(); return false;">
-                <div class="login">
-                    <div class="login-main">
-                        <i class="fa-solid fa-user login-header"></i>
-                        <div class="username">
-                            <i class="fa-solid fa-user login-user"></i>
-                            <input type="text" id="name-login" placeholder="Username" required>
-                        </div>
-                        <div class="password">
-                            <i class="fa-solid fa-lock"></i>
-                            <input type="password" id="password-login" placeholder="Password" required>
-                        </div>
-                        <button type="submit">
-                            Entrar
-                        </button>
-                        <div id="error-message">Incorrect username or password</div>
-                    </div>
-                </div>
-            </form>
-            <div class="footer">
+                </form>
+        </div>
+        <div class="footer">
                 <div class="footer-first-half">
                     <p>Site Links</p>
                     <div class="site-links">
@@ -94,7 +96,7 @@
                             <a href="orcamento.html">Orçamento</a>
                             <a href="cliente.html">Área Cliente</a>
                             <a href="operador.html" class="normal">
-                                <i class="fa-solid fa-user"></i>
+                                <i class="fa-solid fa-user" style="color: white;"></i>
                             </a>
                             <a href="operadorLoged.html" class="logged">
                                 <i class="fa-solid fa-user" style="color: white;"></i>                            </a>

@@ -17,11 +17,15 @@ body {
     border-bottom: 10px solid #003366;
     box-sizing: border-box;
 }
+
 .container {
     position: relative;
     height: 100%;
     width: 100%;
     background-color: white;
+}
+.content {
+    flex: 1;
 }
 /*.background-stripe {
     position: absolute;
@@ -305,7 +309,7 @@ body {
         text-align: center;
         justify-content: center;
         align-items: flex-start;
-        gap: 15px;
+        gap: 35px;
     }
     .top-nav-mobile div {
         display: flex;
@@ -417,7 +421,6 @@ body {
         background-color: none;
     }
 }
-
 @media screen and (max-width: 388px) {
     .company-name-navbar {
         font-size: 20px;

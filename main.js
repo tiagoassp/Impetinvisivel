@@ -17,7 +17,7 @@ document.getElementById("menuButton").addEventListener('click', () => {
         menuIcon.style.color = "#000000";
         menuMobile.style.display = 'flex';
     }
-});
+    });
 });
 document.addEventListener("DOMContentLoaded", function() {
     Display_Settings();

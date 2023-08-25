@@ -16,10 +16,17 @@
     height: 100vh;
     box-sizing: border-box;
   }
-  .container {
-    position: relative;
+  body, html {
+    margin: 0;
+    padding: 0;
     height: 100%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
     width: 100%;
+    flex: 1;
     background-color: white;
   }
   /*.background-stripe {
@@ -302,3 +309,155 @@
     color: rgb(221, 221, 221);
   }
   /* ---------------- PHONE -------------- */  
+  @media screen and (max-width: 855px) {
+    body {
+        border: none;
+    }
+    .navbar {
+        display: none;
+    }
+    .top-nav {
+        display: none;
+    }
+    .navbar-mobile {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 80px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        align-items: center;
+    }
+    .top-nav-mobile {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 35px;
+    }
+    .top-nav-mobile div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .phone, .social-media {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        gap: 5px;
+    }
+    .phone span {
+        font-size: 10px;
+        width: 110px;
+    }
+    .mobile-nav {
+        display: none;
+        flex-direction: column;
+        gap: 35px;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 99;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        width: 50%;
+        height: 100vh;
+    }
+    .mobile-nav a {
+        color: black;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    .mobile-menu-icon {
+        z-index: 100;
+        display: flex;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-50%, -50%);
+    }
+    .mobile-menu-icon button {
+        border: 0;
+        padding: 10px;
+        background-color: white;
+    }
+    .home {
+        border-radius: 50px 50px 50px 50px;
+        max-width: 90%;
+        margin: auto;
+        margin-top: 70px;
+        height: 700px;
+    }
+    .grid-slides {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 70px;
+    }
+
+    .slides {
+        width: 384px; /* Set the width of the slide container */
+        height: 288px;
+        overflow: hidden;
+        position: relative;
+        display: inline-block; /* Change to inline-block */
+        transition: transform 0.6s; /* Apply a transition for smooth animation */
+    }   
+    .slides img {
+        width: 384px;
+        height: 288px;
+        box-sizing: border-box;
+        z-index: 3;
+    }  
+    .slide {
+        position: absolute; /* Use absolute positioning for stacking */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0; /* Start with all images hidden */
+        transition: opacity 0.6s; /* Apply a transition for fading effect */
+    }
+    .hero-text {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 80%;
+        padding: 10px;
+        width: auto;
+        justify-content: center;
+        text-align: left;
+    }
+    .hero-text::before {
+        margin-left: 5px;
+    }
+    .arrows {
+        width: 100%;
+    }
+    .arrows button{
+        background-color: none;
+    }
+}
+@media screen and (max-width: 388px) {
+  .company-name-navbar {
+      font-size: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .site-links {
+    gap: 0;
+  }
+  .site-links div a{
+    font-size: 10px;
+  }
+  .footer-copyright span{
+    font-size: 10px;
+  }
+}

@@ -53,26 +53,26 @@ function Change_Continent_Text(buttonText) {
     const map = document.querySelector(".map-division");
     switch (buttonText) {
         case "Europa":
-            map.style.height = "1250px";
+            map.style.height = (window.innerWidth > 850) ? "1250px" : "900px";
             europe.style.display = "flex";
             asia.style.display = "none";
             americas.style.display = "none";
             break;
         case "Américas":
-            map.style.height = "1100px";
+            map.style.height = (window.innerWidth > 900) ? "1100px" : "700px";
             americas.style.display = "flex";
             europe.style.display = "none";
             asia.style.display = "none";
             break;
         case "Asia":
-            map.style.height = "900px";
+            map.style.height = (window.innerWidth > 900) ? "900px" : "600px";
             asia.style.display = "flex";
             europe.style.display = "none";
             americas.style.display = "none";
             break;
         default:
             break;
-    }
+    }    
     dropdownSpan.textContent = buttonText;
 }
 

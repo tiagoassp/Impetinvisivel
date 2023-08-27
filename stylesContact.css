@@ -413,6 +413,9 @@ button:active {
     position: relative;
     height: 270px;
   }
+  .vertical-line-footer {
+    display: none;
+  }
 }
 @media screen and (max-width: 310px) {
   .socials span, .fa-envelope, .fa-location-dot{

@@ -10,12 +10,14 @@ document.getElementById("menuButton").addEventListener('click', () => {
         menuIcon.classList.add("fa-bars");
         menuIcon.style.color = "#000000";
         menuMobile.style.display = 'none';
+        menuIcon.style.zIndex = "2";
     } else {
         menuMobile.classList.add("open");
         menuIcon.classList.remove("fa-bars");
         menuIcon.classList.add("fa-xmark");
         menuIcon.style.color = "#000000";
         menuMobile.style.display = 'flex';
+        menuIcon.style.zIndex = "2";
     }
     });
 });

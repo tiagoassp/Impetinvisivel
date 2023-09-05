@@ -7,8 +7,6 @@ function sendEmail() {
                  "\nEmail: " + document.getElementById("email").value +
                  "\nMessage: "  + document.getElementById("message").value
     };
-
-    // Send a POST request to the server
     fetch('/contact', {
         method: 'POST',
         headers: {
@@ -16,11 +14,18 @@ function sendEmail() {
         },
         body: JSON.stringify(emailData),
     })
-    .then(response => response.json())
+    .then(response => {
+        if (response.ok) {
+            return response.json(); // Parse JSON if the response is OK
+        } else {
+            throw new Error('Network response was not OK');
+        }
+    })
     .then(data => {
         alert(data.message);
     })
     .catch(error => {
         console.error('Error:', error);
     });
+    
 }

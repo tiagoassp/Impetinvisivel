@@ -7,7 +7,6 @@ from decouple import config
 
 app = Flask(__name__)
 
-
 SMTP_HOST = config('SMTP_HOST')
 SMTP_PORT = int(config('SMTP_PORT'))
 SMTP_USERNAME = config('SMTP_USERNAME')

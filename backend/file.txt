@@ -2,4 +2,4 @@ Host: smtp.elasticemail.com
 Username: jalamente@gmail.com
 Password: 8F4C0370BBDEF89DED07062475DFDE4FDD12
 To: geral.impetinvisivel@gmail.com
-From: jalamente@gmail.com
+From: sergio@impetinvisivel.pt

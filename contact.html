@@ -82,10 +82,10 @@
                 </div>
             </div>
             <div class="email">
-                <form onsubmit="sendEmail(); reset(); return false;">
+                <form onsubmit="sendEmail(); return false; reset();">
                     <input type="text" id="name" placeholder="Nome" required>
                     <input type="email" id="email" placeholder="Email" required>
-                    <input type="title" id="title" placeholder="Título" required>
+                    <input type="text" id="title" placeholder="Título" required>
                     <textarea name="message" id="message" rows="10" placeholder="Mensagem" style="resize: none;"></textarea>
                     <button type="submit">Enviar</button>
                 </form>
@@ -117,7 +117,7 @@
     </div>
     <a href="index.html"><p class = "company-name-navbar">Impetinvisivel Lda</p></a>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="/email.js"></script>
+    <script src="email.js"></script>
     <script src="cookiesLogged.js"></script>
     <script src="main.js"></script>
 </body>

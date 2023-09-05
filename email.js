@@ -1,31 +1,55 @@
 function sendEmail() {
-    const emailData = {
-        subject: document.getElementById("title").value,
-        sender_email: "your_sender_email@gmail.com",
-        recipient_email: "geral.impetinvisivel@gmail.com",
-        message: "Name: " + document.getElementById("title").value +
-                 "\nEmail: " + document.getElementById("email").value +
-                 "\nMessage: "  + document.getElementById("message").value
-    };
-    fetch('/contact', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(emailData),
-    })
-    .then(response => {
-        if (response.ok) {
-            return response.json(); // Parse JSON if the response is OK
-        } else {
-            throw new Error('Network response was not OK');
-        }
-    })
-    .then(data => {
-        alert(data.message);
-    })
-    .catch(error => {
-        console.error('Error:', error);
-    });
-    
+    // Make an HTTP GET request to fetch the text file
+    fetch('/backend/file.txt') // Replace with the actual URL of your text file
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error('Network response was not OK');
+            }
+            return response.text();
+        })
+        .then((textData) => {
+            // Split the text data into lines
+            const lines = textData.split('\n');
+
+            // Create an object to store the configuration
+            const config = {};
+            lines.forEach((line) => {
+                const parts = line.split(':').map((s) => s.trim());
+                if (parts.length === 2) {
+                    const key = parts[0];
+                    const value = parts[1];
+                    config[key] = value;
+                }
+            });
+
+            // Log the fetched values
+            console.log('Fetched Config:', config);
+
+            // Fetch the form input values
+            const titleValue = document.getElementById('title').value;
+            const emailValue = document.getElementById('email').value;
+            const messageValue = document.getElementById('message').value;
+
+            console.log('Title Value:', titleValue);
+            console.log('Email Value:', emailValue);
+            console.log('Message Value:', messageValue);
+
+            Email.send({
+                Host: config["Host"],
+                Username: config["Username"],
+                Password: config["Password"],
+                To: config["To"],
+                From: config["From"],
+                Subject: titleValue,
+                Body:
+                    'Name: ' + titleValue +
+                    '<br> Email: ' + emailValue +
+                    '<br> Message: ' + messageValue,
+            }).then((message) => {
+                alert(message);
+            });
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
 }

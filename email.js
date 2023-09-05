@@ -22,17 +22,10 @@ function sendEmail() {
                 }
             });
 
-            // Log the fetched values
-            console.log('Fetched Config:', config);
-
             // Fetch the form input values
             const titleValue = document.getElementById('title').value;
             const emailValue = document.getElementById('email').value;
             const messageValue = document.getElementById('message').value;
-
-            console.log('Title Value:', titleValue);
-            console.log('Email Value:', emailValue);
-            console.log('Message Value:', messageValue);
 
             Email.send({
                 Host: config["Host"],

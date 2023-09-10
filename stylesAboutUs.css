@@ -110,9 +110,8 @@ body {
 /* ---------------- About Us ---------------- */
 
 .aboutUs {
-  display: block;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 10vh;
   position: relative; 
 }
 
@@ -184,7 +183,7 @@ body {
 }
 .colaboradores img {
   width: 100px;
-  margin-top: 325px;
+  margin-top: 65vh;
 }
 .colaboradores img:first-child {
   width: 75px;
@@ -194,7 +193,7 @@ body {
   width: 50px;
 }
 .colaboradores .p-title {
-  margin-top: 280px;
+  margin-top: 75vh;
   font-size: 14px;
   text-transform: uppercase;
   color: #D4AF37;
@@ -707,23 +706,21 @@ body {
   .background-body p {
     display: flex;
     justify-content: right;
-    max-width: 50%;
     font-size: 12px;
     text-align: left;
     margin: 0;
-    padding-left: 30%;
-  }
+    padding-left: 40%;
+}
   .title-background p {
     margin: 0;
-    padding-left: 30%;
+    padding-left: 40%;
     margin-bottom: 30px;
     padding-top: 50px;
-  }
-  .skills-done {
-    width: 50%;
-    padding-left: 30%;
-    margin: 0;
-  }
+}
+.skills-done {
+  padding-left: 40%;
+  margin: 0;
+}
   .skills-done div {
     grid-template-columns: 20% 80%;
   }
@@ -732,8 +729,9 @@ body {
     font-size: 12px;
   }
   .down-stats {
-    width: 100%;
+    /* width: 100%; */
     gap: 30px;
+    padding-inline: 1vw;
   }
   .america, .europe, .asia {
     width: 80%;
@@ -787,7 +785,7 @@ body {
     width: 150px;
   }
   .images-colaboradores {
-    gap: 20px;
+    gap: 10px;
   }
   .trabalhadores-text {
     font-size: 12px;
